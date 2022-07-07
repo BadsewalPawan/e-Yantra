@@ -1,0 +1,1692 @@
+
+node2node.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000006  00800200  00000962  000009f6  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         00000962  00000000  00000000  00000094  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .bss          0000007a  00800206  00800206  000009fc  2**0
+                  ALLOC
+  3 .stab         000006e4  00000000  00000000  000009fc  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  4 .stabstr      00000085  00000000  00000000  000010e0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_aranges 00000080  00000000  00000000  00001168  2**3
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_info   00001014  00000000  00000000  000011e8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_abbrev 000002dc  00000000  00000000  000021fc  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_line   000005db  00000000  00000000  000024d8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_frame  000002d8  00000000  00000000  00002ab4  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_str    00000369  00000000  00000000  00002d8c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_loc    00000778  00000000  00000000  000030f5  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_ranges 00000030  00000000  00000000  0000386d  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 72 00 	jmp	0xe4	; 0xe4 <__ctors_end>
+   4:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+   8:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+   c:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  10:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  14:	0c 94 09 01 	jmp	0x212	; 0x212 <__vector_5>
+  18:	0c 94 2e 01 	jmp	0x25c	; 0x25c <__vector_6>
+  1c:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  20:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  24:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  28:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  2c:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  30:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  34:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  38:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  3c:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  40:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  44:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  48:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  4c:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  50:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  54:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  58:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  5c:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  60:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  64:	0c 94 94 02 	jmp	0x528	; 0x528 <__vector_25>
+  68:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  6c:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  70:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  74:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  78:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  7c:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  80:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  84:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  88:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  8c:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  90:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  94:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  98:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  9c:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  a0:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  a4:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  a8:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  ac:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  b0:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  b4:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  b8:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  bc:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  c0:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  c4:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  c8:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  cc:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  d0:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  d4:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  d8:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  dc:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  e0:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+
+000000e4 <__ctors_end>:
+  e4:	11 24       	eor	r1, r1
+  e6:	1f be       	out	0x3f, r1	; 63
+  e8:	cf ef       	ldi	r28, 0xFF	; 255
+  ea:	d1 e2       	ldi	r29, 0x21	; 33
+  ec:	de bf       	out	0x3e, r29	; 62
+  ee:	cd bf       	out	0x3d, r28	; 61
+  f0:	00 e0       	ldi	r16, 0x00	; 0
+  f2:	0c bf       	out	0x3c, r16	; 60
+
+000000f4 <__do_copy_data>:
+  f4:	12 e0       	ldi	r17, 0x02	; 2
+  f6:	a0 e0       	ldi	r26, 0x00	; 0
+  f8:	b2 e0       	ldi	r27, 0x02	; 2
+  fa:	e2 e6       	ldi	r30, 0x62	; 98
+  fc:	f9 e0       	ldi	r31, 0x09	; 9
+  fe:	00 e0       	ldi	r16, 0x00	; 0
+ 100:	0b bf       	out	0x3b, r16	; 59
+ 102:	02 c0       	rjmp	.+4      	; 0x108 <__do_copy_data+0x14>
+ 104:	07 90       	elpm	r0, Z+
+ 106:	0d 92       	st	X+, r0
+ 108:	a6 30       	cpi	r26, 0x06	; 6
+ 10a:	b1 07       	cpc	r27, r17
+ 10c:	d9 f7       	brne	.-10     	; 0x104 <__do_copy_data+0x10>
+
+0000010e <__do_clear_bss>:
+ 10e:	12 e0       	ldi	r17, 0x02	; 2
+ 110:	a6 e0       	ldi	r26, 0x06	; 6
+ 112:	b2 e0       	ldi	r27, 0x02	; 2
+ 114:	01 c0       	rjmp	.+2      	; 0x118 <.do_clear_bss_start>
+
+00000116 <.do_clear_bss_loop>:
+ 116:	1d 92       	st	X+, r1
+
+00000118 <.do_clear_bss_start>:
+ 118:	a0 38       	cpi	r26, 0x80	; 128
+ 11a:	b1 07       	cpc	r27, r17
+ 11c:	e1 f7       	brne	.-8      	; 0x116 <.do_clear_bss_loop>
+ 11e:	0e 94 7e 04 	call	0x8fc	; 0x8fc <main>
+ 122:	0c 94 af 04 	jmp	0x95e	; 0x95e <_exit>
+
+00000126 <__bad_interrupt>:
+ 126:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+0000012a <uart0_init>:
+ * Example Call: init_devices();
+ */
+
+void uart0_init()
+{
+	UCSR0B = 0x00;                            //disable while setting baud rate
+ 12a:	e1 ec       	ldi	r30, 0xC1	; 193
+ 12c:	f0 e0       	ldi	r31, 0x00	; 0
+ 12e:	10 82       	st	Z, r1
+	UCSR0A = 0x00;
+ 130:	10 92 c0 00 	sts	0x00C0, r1
+	UCSR0C = 0x06;
+ 134:	a2 ec       	ldi	r26, 0xC2	; 194
+ 136:	b0 e0       	ldi	r27, 0x00	; 0
+ 138:	86 e0       	ldi	r24, 0x06	; 6
+ 13a:	8c 93       	st	X, r24
+	UBRR0L = 0x5F;                             //9600BPS at 14745600Hz
+ 13c:	9f e5       	ldi	r25, 0x5F	; 95
+ 13e:	90 93 c4 00 	sts	0x00C4, r25
+	UBRR0H = 0x00;
+ 142:	10 92 c5 00 	sts	0x00C5, r1
+	UCSR0B = 0x98;
+ 146:	98 e9       	ldi	r25, 0x98	; 152
+ 148:	90 83       	st	Z, r25
+	UCSR0C = 3<<1;                            //setting 8-bit character and 1 stop bit
+ 14a:	8c 93       	st	X, r24
+	UCSR0B = RX | TX;
+ 14c:	88 e1       	ldi	r24, 0x18	; 24
+ 14e:	80 83       	st	Z, r24
+}
+ 150:	08 95       	ret
+
+00000152 <backward>:
+}
+
+
+void backward()
+{
+	PORTA = 0x0A;
+ 152:	8a e0       	ldi	r24, 0x0A	; 10
+ 154:	82 b9       	out	0x02, r24	; 2
+}
+ 156:	08 95       	ret
+
+00000158 <buzzer_on>:
+ * Example Call: buzzer_on();
+ */
+
+void buzzer_on()
+{
+    PORTB= 0xFF;
+ 158:	8f ef       	ldi	r24, 0xFF	; 255
+ 15a:	85 b9       	out	0x05, r24	; 5
+}
+ 15c:	08 95       	ret
+
+0000015e <buzzer_off>:
+ * Example Call: buzzer_off();
+ */
+
+void buzzer_off()
+{
+	PORTB= 0x00;
+ 15e:	15 b8       	out	0x05, r1	; 5
+}
+ 160:	08 95       	ret
+
+00000162 <timer5_init>:
+ */
+
+void timer5_init()
+{
+    //PWM initialization
+	TCCR5A = 0xA9;
+ 162:	89 ea       	ldi	r24, 0xA9	; 169
+ 164:	80 93 20 01 	sts	0x0120, r24
+	TCCR5B = 0x00;
+ 168:	e1 e2       	ldi	r30, 0x21	; 33
+ 16a:	f1 e0       	ldi	r31, 0x01	; 1
+ 16c:	10 82       	st	Z, r1
+	TCNT5H = 0xFF;
+ 16e:	8f ef       	ldi	r24, 0xFF	; 255
+ 170:	80 93 25 01 	sts	0x0125, r24
+	TCNT5L = 0x01;
+ 174:	91 e0       	ldi	r25, 0x01	; 1
+ 176:	90 93 24 01 	sts	0x0124, r25
+	OCR5AH = 0x00;
+ 17a:	10 92 29 01 	sts	0x0129, r1
+	OCR5AL = 0xFF;
+ 17e:	80 93 28 01 	sts	0x0128, r24
+	OCR5BH = 0x00;
+ 182:	10 92 2b 01 	sts	0x012B, r1
+	OCR5BL = 0xFF;
+ 186:	80 93 2a 01 	sts	0x012A, r24
+	OCR5CL = 0xFF;
+ 18a:	80 93 2c 01 	sts	0x012C, r24
+	OCR5CH = 0x00;
+ 18e:	10 92 2d 01 	sts	0x012D, r1
+	TCCR5B = 0X0B;
+ 192:	8b e0       	ldi	r24, 0x0B	; 11
+ 194:	80 83       	st	Z, r24
+}
+ 196:	08 95       	ret
+
+00000198 <velocity>:
+ */
+
+void velocity(unsigned char left_motor, unsigned char right_motor)
+{
+    // set velocity to right and left motor
+	OCR5AL = (unsigned char)right_motor;
+ 198:	60 93 28 01 	sts	0x0128, r22
+	OCR5BL = (unsigned char)left_motor;
+ 19c:	80 93 2a 01 	sts	0x012A, r24
+
+}
+ 1a0:	08 95       	ret
+
+000001a2 <left>:
+ * Example Call: right();
+ */
+
+void left()
+{
+	velocity(253-140,253-130);
+ 1a2:	81 e7       	ldi	r24, 0x71	; 113
+ 1a4:	6b e7       	ldi	r22, 0x7B	; 123
+ 1a6:	0e 94 cc 00 	call	0x198	; 0x198 <velocity>
+	PORTA = 0x09;
+ 1aa:	89 e0       	ldi	r24, 0x09	; 9
+ 1ac:	82 b9       	out	0x02, r24	; 2
+}
+ 1ae:	08 95       	ret
+
+000001b0 <left_degrees>:
+ */
+
+void left_degrees()
+{
+	
+	left(); //Turn left
+ 1b0:	0e 94 d1 00 	call	0x1a2	; 0x1a2 <left>
+	angle_rotate();
+ 1b4:	0e 94 8e 01 	call	0x31c	; 0x31c <angle_rotate>
+}
+ 1b8:	08 95       	ret
+
+000001ba <motor_pin_config>:
+ * Example Call: motor_pin_config();
+ */
+
+void motor_pin_config()
+{
+	DDRA = 0x0F;       // pins 0,1,2,3 of port A are set as output pins
+ 1ba:	8f e0       	ldi	r24, 0x0F	; 15
+ 1bc:	81 b9       	out	0x01, r24	; 1
+	PORTA = 0X00;      // pins 0,1,2,3 of port A initialized as low
+ 1be:	12 b8       	out	0x02, r1	; 2
+	DDRL = 0x18;      // ENA,ENB pins of motor-driver set as output pins
+ 1c0:	88 e1       	ldi	r24, 0x18	; 24
+ 1c2:	80 93 0a 01 	sts	0x010A, r24
+	PORTL = 0x18;     // ENA,ENB pins of motor-driver initialized high
+ 1c6:	80 93 0b 01 	sts	0x010B, r24
+}
+ 1ca:	08 95       	ret
+
+000001cc <left_encoder_pin_config>:
+ * Example Call: left_encoder_pin_config();
+ */
+
+void left_encoder_pin_config()
+{
+	DDRE  = DDRE & 0xEF;  //Set the direction of the PORTE 4 pin as input
+ 1cc:	6c 98       	cbi	0x0d, 4	; 13
+	PORTE = PORTE | 0x10; //Enable internal pull-up for PORTE 4 pin
+ 1ce:	74 9a       	sbi	0x0e, 4	; 14
+}
+ 1d0:	08 95       	ret
+
+000001d2 <right_encoder_pin_config>:
+ * Example Call: right_encoder_pin_config ();
+ */
+
+void right_encoder_pin_config()
+{
+	DDRE  = DDRE & 0xDF;  //Set the direction of the PORTE 4 pin as input
+ 1d2:	6d 98       	cbi	0x0d, 5	; 13
+	PORTE = PORTE | 0x20; //Enable internal pull-up for PORTE 4 pin
+ 1d4:	75 9a       	sbi	0x0e, 5	; 14
+}
+ 1d6:	08 95       	ret
+
+000001d8 <port_init>:
+ * Example Call: port_init();
+ */
+
+void port_init()
+{
+	DDRB=0xFF;
+ 1d8:	8f ef       	ldi	r24, 0xFF	; 255
+ 1da:	84 b9       	out	0x04, r24	; 4
+	timer5_init();                   //Initializing timer for PWM
+ 1dc:	0e 94 b1 00 	call	0x162	; 0x162 <timer5_init>
+	motor_pin_config();              //robot motion pins config
+ 1e0:	0e 94 dd 00 	call	0x1ba	; 0x1ba <motor_pin_config>
+	left_encoder_pin_config();       //left encoder pin config
+ 1e4:	0e 94 e6 00 	call	0x1cc	; 0x1cc <left_encoder_pin_config>
+	right_encoder_pin_config();      //right encoder pin config
+ 1e8:	0e 94 e9 00 	call	0x1d2	; 0x1d2 <right_encoder_pin_config>
+}
+ 1ec:	08 95       	ret
+
+000001ee <left_position_encoder_interrupt_init>:
+ * Example Call: left_position_encoder_interrupt_init();
+ */
+
+void left_position_encoder_interrupt_init() //Interrupt 4 enable
+{
+	cli(); //Clears the global interrupt
+ 1ee:	f8 94       	cli
+	EICRB = EICRB | 0x02; // INT4 is set to trigger with falling edge
+ 1f0:	ea e6       	ldi	r30, 0x6A	; 106
+ 1f2:	f0 e0       	ldi	r31, 0x00	; 0
+ 1f4:	80 81       	ld	r24, Z
+ 1f6:	82 60       	ori	r24, 0x02	; 2
+ 1f8:	80 83       	st	Z, r24
+	EIMSK = EIMSK | 0x10; // Enable Interrupt INT4 for left position encoder
+ 1fa:	ec 9a       	sbi	0x1d, 4	; 29
+	sei();   // Enables the global interrupt
+ 1fc:	78 94       	sei
+}
+ 1fe:	08 95       	ret
+
+00000200 <right_position_encoder_interrupt_init>:
+ * Example Call: left_position_encoder_interrupt_init();
+ */
+
+void right_position_encoder_interrupt_init() //Interrupt 5 enable
+{
+	cli(); //Clears the global interrupt
+ 200:	f8 94       	cli
+	EICRB = EICRB | 0x08; // INT5 is set to trigger with falling edge
+ 202:	ea e6       	ldi	r30, 0x6A	; 106
+ 204:	f0 e0       	ldi	r31, 0x00	; 0
+ 206:	80 81       	ld	r24, Z
+ 208:	88 60       	ori	r24, 0x08	; 8
+ 20a:	80 83       	st	Z, r24
+	EIMSK = EIMSK | 0x20; // Enable Interrupt INT5 for right position encoder
+ 20c:	ed 9a       	sbi	0x1d, 5	; 29
+	sei();   // Enables the global interrupt
+ 20e:	78 94       	sei
+}
+ 210:	08 95       	ret
+
+00000212 <__vector_5>:
+ * Output: Left shaft count is incremented by 1
+ * Example Call: Called when bot left wheel is rotated, like while making a left turn or forward motion
+ */
+
+ISR(INT4_vect)
+{
+ 212:	1f 92       	push	r1
+ 214:	0f 92       	push	r0
+ 216:	0f b6       	in	r0, 0x3f	; 63
+ 218:	0f 92       	push	r0
+ 21a:	11 24       	eor	r1, r1
+ 21c:	8f 93       	push	r24
+ 21e:	9f 93       	push	r25
+ 220:	af 93       	push	r26
+ 222:	bf 93       	push	r27
+	ShaftCountLeft++;   //increment left shaft position count
+ 224:	80 91 13 02 	lds	r24, 0x0213
+ 228:	90 91 14 02 	lds	r25, 0x0214
+ 22c:	a0 91 15 02 	lds	r26, 0x0215
+ 230:	b0 91 16 02 	lds	r27, 0x0216
+ 234:	01 96       	adiw	r24, 0x01	; 1
+ 236:	a1 1d       	adc	r26, r1
+ 238:	b1 1d       	adc	r27, r1
+ 23a:	80 93 13 02 	sts	0x0213, r24
+ 23e:	90 93 14 02 	sts	0x0214, r25
+ 242:	a0 93 15 02 	sts	0x0215, r26
+ 246:	b0 93 16 02 	sts	0x0216, r27
+	
+}
+ 24a:	bf 91       	pop	r27
+ 24c:	af 91       	pop	r26
+ 24e:	9f 91       	pop	r25
+ 250:	8f 91       	pop	r24
+ 252:	0f 90       	pop	r0
+ 254:	0f be       	out	0x3f, r0	; 63
+ 256:	0f 90       	pop	r0
+ 258:	1f 90       	pop	r1
+ 25a:	18 95       	reti
+
+0000025c <__vector_6>:
+ * Example Call: Called when bot right wheel is rotated, like while making a right turn or forward motion
+ */
+
+
+ISR(INT5_vect)
+{
+ 25c:	1f 92       	push	r1
+ 25e:	0f 92       	push	r0
+ 260:	0f b6       	in	r0, 0x3f	; 63
+ 262:	0f 92       	push	r0
+ 264:	11 24       	eor	r1, r1
+ 266:	8f 93       	push	r24
+ 268:	9f 93       	push	r25
+ 26a:	af 93       	push	r26
+ 26c:	bf 93       	push	r27
+	ShaftCountRight++;  //increment right shaft position count
+ 26e:	80 91 0f 02 	lds	r24, 0x020F
+ 272:	90 91 10 02 	lds	r25, 0x0210
+ 276:	a0 91 11 02 	lds	r26, 0x0211
+ 27a:	b0 91 12 02 	lds	r27, 0x0212
+ 27e:	01 96       	adiw	r24, 0x01	; 1
+ 280:	a1 1d       	adc	r26, r1
+ 282:	b1 1d       	adc	r27, r1
+ 284:	80 93 0f 02 	sts	0x020F, r24
+ 288:	90 93 10 02 	sts	0x0210, r25
+ 28c:	a0 93 11 02 	sts	0x0211, r26
+ 290:	b0 93 12 02 	sts	0x0212, r27
+	
+}
+ 294:	bf 91       	pop	r27
+ 296:	af 91       	pop	r26
+ 298:	9f 91       	pop	r25
+ 29a:	8f 91       	pop	r24
+ 29c:	0f 90       	pop	r0
+ 29e:	0f be       	out	0x3f, r0	; 63
+ 2a0:	0f 90       	pop	r0
+ 2a2:	1f 90       	pop	r1
+ 2a4:	18 95       	reti
+
+000002a6 <adc_pin_config>:
+ */
+
+
+void adc_pin_config()
+{
+	DDRF = 0x00;       //set as input
+ 2a6:	10 ba       	out	0x10, r1	; 16
+	PORTF = 0x00;      //giving port f pins low signal
+ 2a8:	11 ba       	out	0x11, r1	; 17
+
+}
+ 2aa:	08 95       	ret
+
+000002ac <adc_init>:
+ */
+
+void adc_init()
+{
+    // initializing adc for white line sensor
+	ADCSRA = 0x00;
+ 2ac:	ea e7       	ldi	r30, 0x7A	; 122
+ 2ae:	f0 e0       	ldi	r31, 0x00	; 0
+ 2b0:	10 82       	st	Z, r1
+	ADCSRB = 0x00;
+ 2b2:	10 92 7b 00 	sts	0x007B, r1
+	ADMUX = 0x20;
+ 2b6:	80 e2       	ldi	r24, 0x20	; 32
+ 2b8:	80 93 7c 00 	sts	0x007C, r24
+	ACSR = 0x80;
+ 2bc:	80 e8       	ldi	r24, 0x80	; 128
+ 2be:	80 bf       	out	0x30, r24	; 48
+	ADCSRA = 0x86;
+ 2c0:	86 e8       	ldi	r24, 0x86	; 134
+ 2c2:	80 83       	st	Z, r24
+}
+ 2c4:	08 95       	ret
+
+000002c6 <ADC_Conversion>:
+
+unsigned char ADC_Conversion(unsigned char Ch)
+{
+    // converting received value from sensor to adc and return it
+	unsigned char a;
+    Ch = Ch & 0x07;
+ 2c6:	87 70       	andi	r24, 0x07	; 7
+    ADMUX= 0x20| Ch;
+ 2c8:	80 62       	ori	r24, 0x20	; 32
+ 2ca:	80 93 7c 00 	sts	0x007C, r24
+    ADCSRA = ADCSRA | 0x40;
+ 2ce:	ea e7       	ldi	r30, 0x7A	; 122
+ 2d0:	f0 e0       	ldi	r31, 0x00	; 0
+ 2d2:	80 81       	ld	r24, Z
+ 2d4:	80 64       	ori	r24, 0x40	; 64
+ 2d6:	80 83       	st	Z, r24
+    while((ADCSRA&0x10)==0);
+ 2d8:	80 81       	ld	r24, Z
+ 2da:	84 ff       	sbrs	r24, 4
+ 2dc:	fd cf       	rjmp	.-6      	; 0x2d8 <ADC_Conversion+0x12>
+    a=ADCH;
+ 2de:	80 91 79 00 	lds	r24, 0x0079
+    ADCSRA = ADCSRA|0x10;
+ 2e2:	ea e7       	ldi	r30, 0x7A	; 122
+ 2e4:	f0 e0       	ldi	r31, 0x00	; 0
+ 2e6:	90 81       	ld	r25, Z
+ 2e8:	90 61       	ori	r25, 0x10	; 16
+ 2ea:	90 83       	st	Z, r25
+    ADCSRB = 0x00;
+ 2ec:	10 92 7b 00 	sts	0x007B, r1
+    return a;
+}
+ 2f0:	08 95       	ret
+
+000002f2 <getSensorValue>:
+ */
+
+void getSensorValue()
+{
+    // get and store the line sensor values
+    Left_white_line=ADC_Conversion(3);
+ 2f2:	83 e0       	ldi	r24, 0x03	; 3
+ 2f4:	0e 94 63 01 	call	0x2c6	; 0x2c6 <ADC_Conversion>
+ 2f8:	80 93 08 02 	sts	0x0208, r24
+    Center_white_line=ADC_Conversion(2);
+ 2fc:	82 e0       	ldi	r24, 0x02	; 2
+ 2fe:	0e 94 63 01 	call	0x2c6	; 0x2c6 <ADC_Conversion>
+ 302:	80 93 07 02 	sts	0x0207, r24
+    Right_white_line=ADC_Conversion(1);
+ 306:	81 e0       	ldi	r24, 0x01	; 1
+ 308:	0e 94 63 01 	call	0x2c6	; 0x2c6 <ADC_Conversion>
+ 30c:	80 93 06 02 	sts	0x0206, r24
+}
+ 310:	08 95       	ret
+
+00000312 <stop>:
+ * Example Call: stop();
+ */
+
+void stop()
+{
+	velocity(0,0);    // making velocity 0 to stop the bot
+ 312:	80 e0       	ldi	r24, 0x00	; 0
+ 314:	60 e0       	ldi	r22, 0x00	; 0
+ 316:	0e 94 cc 00 	call	0x198	; 0x198 <velocity>
+}
+ 31a:	08 95       	ret
+
+0000031c <angle_rotate>:
+
+void angle_rotate()
+{
+
+	while(1){
+		getSensorValue();
+ 31c:	0e 94 79 01 	call	0x2f2	; 0x2f2 <getSensorValue>
+		if(Left_white_line <= threshold && Center_white_line >= threshold && Right_white_line <= threshold){
+ 320:	80 91 02 02 	lds	r24, 0x0202
+ 324:	90 91 03 02 	lds	r25, 0x0203
+ 328:	20 91 08 02 	lds	r18, 0x0208
+ 32c:	30 e0       	ldi	r19, 0x00	; 0
+ 32e:	82 17       	cp	r24, r18
+ 330:	93 07       	cpc	r25, r19
+ 332:	a4 f3       	brlt	.-24     	; 0x31c <angle_rotate>
+ 334:	20 91 07 02 	lds	r18, 0x0207
+ 338:	30 e0       	ldi	r19, 0x00	; 0
+ 33a:	28 17       	cp	r18, r24
+ 33c:	39 07       	cpc	r19, r25
+ 33e:	74 f3       	brlt	.-36     	; 0x31c <angle_rotate>
+ 340:	20 91 06 02 	lds	r18, 0x0206
+ 344:	30 e0       	ldi	r19, 0x00	; 0
+ 346:	82 17       	cp	r24, r18
+ 348:	93 07       	cpc	r25, r19
+ 34a:	44 f3       	brlt	.-48     	; 0x31c <angle_rotate>
+			velocity(0,0);
+ 34c:	80 e0       	ldi	r24, 0x00	; 0
+ 34e:	60 e0       	ldi	r22, 0x00	; 0
+ 350:	0e 94 cc 00 	call	0x198	; 0x198 <velocity>
+			break;
+		}
+	}
+
+    stop(); //Stop robot
+ 354:	0e 94 89 01 	call	0x312	; 0x312 <stop>
+}
+ 358:	08 95       	ret
+
+0000035a <forward>:
+ * Logic: velocity is varied for calibrating its motion while following black line and made 0 when node is detected
+ * Example Call: stop();
+ */
+
+void forward()
+{
+ 35a:	cf 93       	push	r28
+	velocity(253-140,253-130);  // velocity is initially set such that it follows black line......DIFFERENCE in VELOCITY to COMPENSATE mechanical error in forward motion
+ 35c:	81 e7       	ldi	r24, 0x71	; 113
+ 35e:	6b e7       	ldi	r22, 0x7B	; 123
+ 360:	0e 94 cc 00 	call	0x198	; 0x198 <velocity>
+	getSensorValue();           // reading white line sensor value
+ 364:	0e 94 79 01 	call	0x2f2	; 0x2f2 <getSensorValue>
+	PORTA = 0x05;               // bot is set in forward motion
+ 368:	85 e0       	ldi	r24, 0x05	; 5
+ 36a:	82 b9       	out	0x02, r24	; 2
+
+	while (!(Left_white_line >= threshold && Center_white_line >= threshold && Right_white_line >= threshold)) // TRUE while all sensors are NOT reading black (true until node is detected)
+	{
+		 
+		getSensorValue();      // reading white line sensor value
+		PORTA=0x05;
+ 36c:	c5 e0       	ldi	r28, 0x05	; 5
+{
+	velocity(253-140,253-130);  // velocity is initially set such that it follows black line......DIFFERENCE in VELOCITY to COMPENSATE mechanical error in forward motion
+	getSensorValue();           // reading white line sensor value
+	PORTA = 0x05;               // bot is set in forward motion
+
+	while (!(Left_white_line >= threshold && Center_white_line >= threshold && Right_white_line >= threshold)) // TRUE while all sensors are NOT reading black (true until node is detected)
+ 36e:	71 c0       	rjmp	.+226    	; 0x452 <forward+0xf8>
+	{
+		 
+		getSensorValue();      // reading white line sensor value
+ 370:	0e 94 79 01 	call	0x2f2	; 0x2f2 <getSensorValue>
+		PORTA=0x05;
+ 374:	c2 b9       	out	0x02, r28	; 2
+		if(Left_white_line <= threshold && Center_white_line <= threshold && Right_white_line >= threshold)
+ 376:	40 91 08 02 	lds	r20, 0x0208
+ 37a:	50 e0       	ldi	r21, 0x00	; 0
+ 37c:	80 91 02 02 	lds	r24, 0x0202
+ 380:	90 91 03 02 	lds	r25, 0x0203
+ 384:	84 17       	cp	r24, r20
+ 386:	95 07       	cpc	r25, r21
+ 388:	14 f1       	brlt	.+68     	; 0x3ce <forward+0x74>
+ 38a:	60 91 07 02 	lds	r22, 0x0207
+ 38e:	70 e0       	ldi	r23, 0x00	; 0
+ 390:	86 17       	cp	r24, r22
+ 392:	97 07       	cpc	r25, r23
+ 394:	74 f0       	brlt	.+28     	; 0x3b2 <forward+0x58>
+ 396:	20 91 06 02 	lds	r18, 0x0206
+ 39a:	30 e0       	ldi	r19, 0x00	; 0
+ 39c:	28 17       	cp	r18, r24
+ 39e:	39 07       	cpc	r19, r25
+ 3a0:	2c f0       	brlt	.+10     	; 0x3ac <forward+0x52>
+		{
+			
+			velocity(113-10,70);//(L,R)    // turning RIGHT by varying velocity to get back on black line
+ 3a2:	87 e6       	ldi	r24, 0x67	; 103
+ 3a4:	66 e4       	ldi	r22, 0x46	; 70
+ 3a6:	0e 94 cc 00 	call	0x198	; 0x198 <velocity>
+ 3aa:	53 c0       	rjmp	.+166    	; 0x452 <forward+0xf8>
+			
+		}
+		else if(Left_white_line <= threshold && Center_white_line >= threshold && Right_white_line >= threshold)
+ 3ac:	68 17       	cp	r22, r24
+ 3ae:	79 07       	cpc	r23, r25
+ 3b0:	5c f0       	brlt	.+22     	; 0x3c8 <forward+0x6e>
+ 3b2:	20 91 06 02 	lds	r18, 0x0206
+ 3b6:	30 e0       	ldi	r19, 0x00	; 0
+ 3b8:	28 17       	cp	r18, r24
+ 3ba:	39 07       	cpc	r19, r25
+ 3bc:	2c f0       	brlt	.+10     	; 0x3c8 <forward+0x6e>
+		{
+			
+			velocity(113-10,103);    // turning RIGHT by varying velocity to get back on black line
+ 3be:	87 e6       	ldi	r24, 0x67	; 103
+ 3c0:	67 e6       	ldi	r22, 0x67	; 103
+ 3c2:	0e 94 cc 00 	call	0x198	; 0x198 <velocity>
+ 3c6:	45 c0       	rjmp	.+138    	; 0x452 <forward+0xf8>
+			
+		}
+		else if(Left_white_line >= threshold && Center_white_line <= threshold && Right_white_line <= threshold)
+ 3c8:	48 17       	cp	r20, r24
+ 3ca:	59 07       	cpc	r21, r25
+ 3cc:	14 f1       	brlt	.+68     	; 0x412 <forward+0xb8>
+ 3ce:	60 91 07 02 	lds	r22, 0x0207
+ 3d2:	70 e0       	ldi	r23, 0x00	; 0
+ 3d4:	86 17       	cp	r24, r22
+ 3d6:	97 07       	cpc	r25, r23
+ 3d8:	74 f0       	brlt	.+28     	; 0x3f6 <forward+0x9c>
+ 3da:	20 91 06 02 	lds	r18, 0x0206
+ 3de:	30 e0       	ldi	r19, 0x00	; 0
+ 3e0:	82 17       	cp	r24, r18
+ 3e2:	93 07       	cpc	r25, r19
+ 3e4:	2c f0       	brlt	.+10     	; 0x3f0 <forward+0x96>
+		{
+			  
+			velocity(70-10,113);  // turning LEFT by varying velocity to get back on black line
+ 3e6:	8c e3       	ldi	r24, 0x3C	; 60
+ 3e8:	61 e7       	ldi	r22, 0x71	; 113
+ 3ea:	0e 94 cc 00 	call	0x198	; 0x198 <velocity>
+ 3ee:	31 c0       	rjmp	.+98     	; 0x452 <forward+0xf8>
+			
+		}
+		else if(Left_white_line >= threshold && Center_white_line >= threshold && Right_white_line <= threshold)
+ 3f0:	68 17       	cp	r22, r24
+ 3f2:	79 07       	cpc	r23, r25
+ 3f4:	5c f0       	brlt	.+22     	; 0x40c <forward+0xb2>
+ 3f6:	20 91 06 02 	lds	r18, 0x0206
+ 3fa:	30 e0       	ldi	r19, 0x00	; 0
+ 3fc:	82 17       	cp	r24, r18
+ 3fe:	93 07       	cpc	r25, r19
+ 400:	2c f0       	brlt	.+10     	; 0x40c <forward+0xb2>
+		{
+			
+			velocity(103-10,113);    // turning LEFT by varying velocity to get back on black line
+ 402:	8d e5       	ldi	r24, 0x5D	; 93
+ 404:	61 e7       	ldi	r22, 0x71	; 113
+ 406:	0e 94 cc 00 	call	0x198	; 0x198 <velocity>
+ 40a:	23 c0       	rjmp	.+70     	; 0x452 <forward+0xf8>
+			
+		}
+		else if(Left_white_line <= threshold && Center_white_line >= threshold && Right_white_line <= threshold)
+ 40c:	84 17       	cp	r24, r20
+ 40e:	95 07       	cpc	r25, r21
+ 410:	8c f0       	brlt	.+34     	; 0x434 <forward+0xda>
+ 412:	20 91 07 02 	lds	r18, 0x0207
+ 416:	30 e0       	ldi	r19, 0x00	; 0
+ 418:	28 17       	cp	r18, r24
+ 41a:	39 07       	cpc	r19, r25
+ 41c:	5c f0       	brlt	.+22     	; 0x434 <forward+0xda>
+ 41e:	20 91 06 02 	lds	r18, 0x0206
+ 422:	30 e0       	ldi	r19, 0x00	; 0
+ 424:	82 17       	cp	r24, r18
+ 426:	93 07       	cpc	r25, r19
+ 428:	2c f0       	brlt	.+10     	; 0x434 <forward+0xda>
+		{
+			 
+			velocity(253-140,253-130);    // velocity difference for making rotations of right and left wheel same.
+ 42a:	81 e7       	ldi	r24, 0x71	; 113
+ 42c:	6b e7       	ldi	r22, 0x7B	; 123
+ 42e:	0e 94 cc 00 	call	0x198	; 0x198 <velocity>
+ 432:	0f c0       	rjmp	.+30     	; 0x452 <forward+0xf8>
+		{
+			/* this is the condition when bot detects full white surface.
+			Bot then corrects itself by re-aligning in reverse direction
+			till it reads a line*/
+					
+			backward();
+ 434:	0e 94 a9 00 	call	0x152	; 0x152 <backward>
+			velocity(105-10,105);
+ 438:	8f e5       	ldi	r24, 0x5F	; 95
+ 43a:	69 e6       	ldi	r22, 0x69	; 105
+ 43c:	0e 94 cc 00 	call	0x198	; 0x198 <velocity>
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 440:	8f ef       	ldi	r24, 0xFF	; 255
+ 442:	9f e7       	ldi	r25, 0x7F	; 127
+ 444:	a6 e1       	ldi	r26, 0x16	; 22
+ 446:	81 50       	subi	r24, 0x01	; 1
+ 448:	90 40       	sbci	r25, 0x00	; 0
+ 44a:	a0 40       	sbci	r26, 0x00	; 0
+ 44c:	e1 f7       	brne	.-8      	; 0x446 <forward+0xec>
+ 44e:	00 c0       	rjmp	.+0      	; 0x450 <forward+0xf6>
+ 450:	00 00       	nop
+{
+	velocity(253-140,253-130);  // velocity is initially set such that it follows black line......DIFFERENCE in VELOCITY to COMPENSATE mechanical error in forward motion
+	getSensorValue();           // reading white line sensor value
+	PORTA = 0x05;               // bot is set in forward motion
+
+	while (!(Left_white_line >= threshold && Center_white_line >= threshold && Right_white_line >= threshold)) // TRUE while all sensors are NOT reading black (true until node is detected)
+ 452:	80 91 02 02 	lds	r24, 0x0202
+ 456:	90 91 03 02 	lds	r25, 0x0203
+ 45a:	20 91 08 02 	lds	r18, 0x0208
+ 45e:	30 e0       	ldi	r19, 0x00	; 0
+ 460:	28 17       	cp	r18, r24
+ 462:	39 07       	cpc	r19, r25
+ 464:	0c f4       	brge	.+2      	; 0x468 <forward+0x10e>
+ 466:	84 cf       	rjmp	.-248    	; 0x370 <forward+0x16>
+ 468:	20 91 07 02 	lds	r18, 0x0207
+ 46c:	30 e0       	ldi	r19, 0x00	; 0
+ 46e:	28 17       	cp	r18, r24
+ 470:	39 07       	cpc	r19, r25
+ 472:	0c f4       	brge	.+2      	; 0x476 <forward+0x11c>
+ 474:	7d cf       	rjmp	.-262    	; 0x370 <forward+0x16>
+ 476:	20 91 06 02 	lds	r18, 0x0206
+ 47a:	30 e0       	ldi	r19, 0x00	; 0
+ 47c:	28 17       	cp	r18, r24
+ 47e:	39 07       	cpc	r19, r25
+ 480:	0c f4       	brge	.+2      	; 0x484 <forward+0x12a>
+ 482:	76 cf       	rjmp	.-276    	; 0x370 <forward+0x16>
+			_delay_ms(500);
+			
+		}
+	}	
+    // to make less jerk while coming to rest
+	if(data_inst[0] == "P"){
+ 484:	80 91 1b 02 	lds	r24, 0x021B
+ 488:	90 e0       	ldi	r25, 0x00	; 0
+ 48a:	a2 e0       	ldi	r26, 0x02	; 2
+ 48c:	80 30       	cpi	r24, 0x00	; 0
+ 48e:	9a 07       	cpc	r25, r26
+ 490:	29 f4       	brne	.+10     	; 0x49c <forward+0x142>
+		velocity(0,0);         // if pebble is just in front, bot doesn't cross the node and avoid crashing with aruco
+ 492:	80 e0       	ldi	r24, 0x00	; 0
+ 494:	60 e0       	ldi	r22, 0x00	; 0
+ 496:	0e 94 cc 00 	call	0x198	; 0x198 <velocity>
+ 49a:	23 c0       	rjmp	.+70     	; 0x4e2 <forward+0x188>
+ 49c:	8f ef       	ldi	r24, 0xFF	; 255
+ 49e:	9f eb       	ldi	r25, 0xBF	; 191
+ 4a0:	a6 e0       	ldi	r26, 0x06	; 6
+ 4a2:	81 50       	subi	r24, 0x01	; 1
+ 4a4:	90 40       	sbci	r25, 0x00	; 0
+ 4a6:	a0 40       	sbci	r26, 0x00	; 0
+ 4a8:	e1 f7       	brne	.-8      	; 0x4a2 <forward+0x148>
+ 4aa:	00 c0       	rjmp	.+0      	; 0x4ac <forward+0x152>
+ 4ac:	00 00       	nop
+	}
+	else
+	{
+	_delay_ms(150);
+	velocity(50-10,50);
+ 4ae:	88 e2       	ldi	r24, 0x28	; 40
+ 4b0:	62 e3       	ldi	r22, 0x32	; 50
+ 4b2:	0e 94 cc 00 	call	0x198	; 0x198 <velocity>
+ 4b6:	8f ef       	ldi	r24, 0xFF	; 255
+ 4b8:	9f ef       	ldi	r25, 0xFF	; 255
+ 4ba:	a8 e0       	ldi	r26, 0x08	; 8
+ 4bc:	81 50       	subi	r24, 0x01	; 1
+ 4be:	90 40       	sbci	r25, 0x00	; 0
+ 4c0:	a0 40       	sbci	r26, 0x00	; 0
+ 4c2:	e1 f7       	brne	.-8      	; 0x4bc <forward+0x162>
+ 4c4:	00 c0       	rjmp	.+0      	; 0x4c6 <forward+0x16c>
+ 4c6:	00 00       	nop
+	_delay_ms(200);
+	velocity(0,0);                 // stop the bot motion
+ 4c8:	80 e0       	ldi	r24, 0x00	; 0
+ 4ca:	60 e0       	ldi	r22, 0x00	; 0
+ 4cc:	0e 94 cc 00 	call	0x198	; 0x198 <velocity>
+ 4d0:	8f ef       	ldi	r24, 0xFF	; 255
+ 4d2:	9f ef       	ldi	r25, 0xFF	; 255
+ 4d4:	ac e2       	ldi	r26, 0x2C	; 44
+ 4d6:	81 50       	subi	r24, 0x01	; 1
+ 4d8:	90 40       	sbci	r25, 0x00	; 0
+ 4da:	a0 40       	sbci	r26, 0x00	; 0
+ 4dc:	e1 f7       	brne	.-8      	; 0x4d6 <forward+0x17c>
+ 4de:	00 c0       	rjmp	.+0      	; 0x4e0 <forward+0x186>
+ 4e0:	00 00       	nop
+	_delay_ms(1000);	
+	}
+	return;
+}
+ 4e2:	cf 91       	pop	r28
+ 4e4:	08 95       	ret
+
+000004e6 <init_devices>:
+ * Example Call: init_devices();
+ */
+
+void init_devices()
+{
+	cli();                                     // clears global interrupts.
+ 4e6:	f8 94       	cli
+	port_init();                               // initialize all necessary ports
+ 4e8:	0e 94 ec 00 	call	0x1d8	; 0x1d8 <port_init>
+	left_position_encoder_interrupt_init();   // Enable left_position_encoder_interrupt
+ 4ec:	0e 94 f7 00 	call	0x1ee	; 0x1ee <left_position_encoder_interrupt_init>
+	right_position_encoder_interrupt_init();  // Enable right_position_encoder_interrupt
+ 4f0:	0e 94 00 01 	call	0x200	; 0x200 <right_position_encoder_interrupt_init>
+	DDRB= 0xFF;
+ 4f4:	8f ef       	ldi	r24, 0xFF	; 255
+ 4f6:	84 b9       	out	0x04, r24	; 4
+	DDRH=0xFF;                                          //magnet_pin_config
+ 4f8:	80 93 01 01 	sts	0x0101, r24
+	uart0_init();                             // initialize xbee communication
+ 4fc:	0e 94 95 00 	call	0x12a	; 0x12a <uart0_init>
+	adc_init();                               // initialize white line sensor
+ 500:	0e 94 56 01 	call	0x2ac	; 0x2ac <adc_init>
+	sei();                                    // sets global interrupts.
+ 504:	78 94       	sei
+}
+ 506:	08 95       	ret
+
+00000508 <uart_rx>:
+ * Example Call: recData = uart_rx();
+ */
+
+char uart_rx()
+{
+	while(!(UCSR0A & RE));						//waiting to receive
+ 508:	e0 ec       	ldi	r30, 0xC0	; 192
+ 50a:	f0 e0       	ldi	r31, 0x00	; 0
+ 50c:	80 81       	ld	r24, Z
+ 50e:	88 23       	and	r24, r24
+ 510:	ec f7       	brge	.-6      	; 0x50c <uart_rx+0x4>
+	return UDR0;
+ 512:	80 91 c6 00 	lds	r24, 0x00C6
+}
+ 516:	08 95       	ret
+
+00000518 <uart_tx>:
+ * Example Call: recData = uart_tx('J');
+ */
+
+void uart_tx(char data)
+{
+    while(!(UCSR0A & TE));                        //waiting to transmit
+ 518:	e0 ec       	ldi	r30, 0xC0	; 192
+ 51a:	f0 e0       	ldi	r31, 0x00	; 0
+ 51c:	90 81       	ld	r25, Z
+ 51e:	95 ff       	sbrs	r25, 5
+ 520:	fd cf       	rjmp	.-6      	; 0x51c <uart_tx+0x4>
+    UDR0 = data;
+ 522:	80 93 c6 00 	sts	0x00C6, r24
+}
+ 526:	08 95       	ret
+
+00000528 <__vector_25>:
+ * Example Call: When bot xbee is waiting for remote xbee to send data
+ */
+
+
+ISR(USART0_RX_vect)
+{
+ 528:	1f 92       	push	r1
+ 52a:	0f 92       	push	r0
+ 52c:	0f b6       	in	r0, 0x3f	; 63
+ 52e:	0f 92       	push	r0
+ 530:	11 24       	eor	r1, r1
+ 532:	8f 93       	push	r24
+	data = UDR0;
+ 534:	80 91 c6 00 	lds	r24, 0x00C6
+ 538:	80 93 7f 02 	sts	0x027F, r24
+}
+ 53c:	8f 91       	pop	r24
+ 53e:	0f 90       	pop	r0
+ 540:	0f be       	out	0x3f, r0	; 63
+ 542:	0f 90       	pop	r0
+ 544:	1f 90       	pop	r1
+ 546:	18 95       	reti
+
+00000548 <right>:
+* Example Call: right();
+*/
+
+void right()
+{
+	velocity(253-140,253-130);
+ 548:	81 e7       	ldi	r24, 0x71	; 113
+ 54a:	6b e7       	ldi	r22, 0x7B	; 123
+ 54c:	0e 94 cc 00 	call	0x198	; 0x198 <velocity>
+	PORTA = 0x06;
+ 550:	86 e0       	ldi	r24, 0x06	; 6
+ 552:	82 b9       	out	0x02, r24	; 2
+}
+ 554:	08 95       	ret
+
+00000556 <right_degrees>:
+
+
+void right_degrees()
+{
+	
+	right(); //Turn right
+ 556:	0e 94 a4 02 	call	0x548	; 0x548 <right>
+	angle_rotate();
+ 55a:	0e 94 8e 01 	call	0x31c	; 0x31c <angle_rotate>
+}
+ 55e:	08 95       	ret
+
+00000560 <magnet_on>:
+ * Example Call: magnet_on();
+ */
+
+magnet_on(){
+	
+	PORTH=0xFF;
+ 560:	8f ef       	ldi	r24, 0xFF	; 255
+ 562:	80 93 02 01 	sts	0x0102, r24
+}
+ 566:	08 95       	ret
+
+00000568 <magnet_off>:
+ * Example Call: magnet_off();
+ */
+
+magnet_off(){
+	
+	PORTH=0x00;
+ 568:	10 92 02 01 	sts	0x0102, r1
+}
+ 56c:	08 95       	ret
+
+0000056e <run>:
+ * Logic: Traversal command is fetched from the 'data_inst'array and then executed, this process is done until final destination is acieved
+ * Example run();
+ */
+
+void run()
+{
+ 56e:	ef 92       	push	r14
+ 570:	ff 92       	push	r15
+ 572:	0f 93       	push	r16
+ 574:	1f 93       	push	r17
+ 576:	cf 93       	push	r28
+ 578:	df 93       	push	r29
+    // giving explicit forward motion to bot to leave the staring point and reach the nearest node (node in front of start point)
+	
+	velocity(113,123);
+ 57a:	81 e7       	ldi	r24, 0x71	; 113
+ 57c:	6b e7       	ldi	r22, 0x7B	; 123
+ 57e:	0e 94 cc 00 	call	0x198	; 0x198 <velocity>
+	PORTA = 0x05;  // forward
+ 582:	85 e0       	ldi	r24, 0x05	; 5
+ 584:	82 b9       	out	0x02, r24	; 2
+ 586:	86 e6       	ldi	r24, 0x66	; 102
+ 588:	96 ee       	ldi	r25, 0xE6	; 230
+ 58a:	a2 e1       	ldi	r26, 0x12	; 18
+ 58c:	81 50       	subi	r24, 0x01	; 1
+ 58e:	90 40       	sbci	r25, 0x00	; 0
+ 590:	a0 40       	sbci	r26, 0x00	; 0
+ 592:	e1 f7       	brne	.-8      	; 0x58c <run+0x1e>
+	_delay_ms(420);
+	forward();
+ 594:	0e 94 ad 01 	call	0x35a	; 0x35a <forward>
+    index = 0;
+ 598:	10 92 0a 02 	sts	0x020A, r1
+ 59c:	10 92 09 02 	sts	0x0209, r1
+    // ShaftCountLeft or ShaftCountRight increments every time wheels rotates. so it is necessary to clear this variable so that count for degree_turn is properly obtained
+    ShaftCountLeft=0;
+ 5a0:	10 92 13 02 	sts	0x0213, r1
+ 5a4:	10 92 14 02 	sts	0x0214, r1
+ 5a8:	10 92 15 02 	sts	0x0215, r1
+ 5ac:	10 92 16 02 	sts	0x0216, r1
+    ShaftCountRight=0;
+ 5b0:	10 92 0f 02 	sts	0x020F, r1
+ 5b4:	10 92 10 02 	sts	0x0210, r1
+ 5b8:	10 92 11 02 	sts	0x0211, r1
+ 5bc:	10 92 12 02 	sts	0x0212, r1
+    while (!(data_inst[index] == '.'))     // WHEN '.' is the index element of array it would IMPLY TRAVERSAL IS COMPLETED, now break the loop and stop
+ 5c0:	80 91 1b 02 	lds	r24, 0x021B
+ 5c4:	8e 32       	cpi	r24, 0x2E	; 46
+ 5c6:	09 f4       	brne	.+2      	; 0x5ca <run+0x5c>
+ 5c8:	4c c1       	rjmp	.+664    	; 0x862 <run+0x2f4>
+        else if((data_inst[index] == 'S')) // WHEN 'A' is the index element of array it would IMPLY BOT TO move backward a bit
+        {
+             // to go back to node from the pick/drop point
+				_delay_ms(100);
+				velocity(253-140,253-130);
+				PORTA=0x0A;
+ 5ca:	0a e0       	ldi	r16, 0x0A	; 10
+        else if((data_inst[index] == 'W')) // WHEN 'W' is the index element of array it would IMPLY BOT TO GO A BIT FORWARD
+        {
+            //forward_mm(40); //move a bit ahead to reach pick/drop point
+			_delay_ms(100);
+			velocity(253-140,253-130);
+			PORTA=0x05;
+ 5cc:	15 e0       	ldi	r17, 0x05	; 5
+			left_degrees();
+		}
+        }
+        else if((data_inst[index] == 's')) // WHEN 's' is the index element of array it would IMPLY BOT TO MAKE A 180 DEGREE TURN (U-Turn)
+        {
+            left_degrees();  // 60 deg
+ 5ce:	0f 2e       	mov	r0, r31
+ 5d0:	f8 ed       	ldi	r31, 0xD8	; 216
+ 5d2:	ef 2e       	mov	r14, r31
+ 5d4:	f0 e0       	ldi	r31, 0x00	; 0
+ 5d6:	ff 2e       	mov	r15, r31
+ 5d8:	f0 2d       	mov	r31, r0
+	forward();
+    index = 0;
+    // ShaftCountLeft or ShaftCountRight increments every time wheels rotates. so it is necessary to clear this variable so that count for degree_turn is properly obtained
+    ShaftCountLeft=0;
+    ShaftCountRight=0;
+    while (!(data_inst[index] == '.'))     // WHEN '.' is the index element of array it would IMPLY TRAVERSAL IS COMPLETED, now break the loop and stop
+ 5da:	cb e1       	ldi	r28, 0x1B	; 27
+ 5dc:	d2 e0       	ldi	r29, 0x02	; 2
+    {
+        if((data_inst[index] == 'w'))      // WHEN 'w' is the index element of array it would IMPLY BOT TO GO FORWARD
+ 5de:	87 37       	cpi	r24, 0x77	; 119
+ 5e0:	19 f4       	brne	.+6      	; 0x5e8 <run+0x7a>
+        {
+            forward();
+ 5e2:	0e 94 ad 01 	call	0x35a	; 0x35a <forward>
+ 5e6:	2d c1       	rjmp	.+602    	; 0x842 <run+0x2d4>
+        }
+        else if((data_inst[index] == 'a')) // WHEN 'a' is the index element of array it would IMPLY BOT TO MAKE A LEFT 60 DEGREE TURN
+ 5e8:	81 36       	cpi	r24, 0x61	; 97
+ 5ea:	c9 f4       	brne	.+50     	; 0x61e <run+0xb0>
+        {
+            left_degrees(); // 60 deg
+ 5ec:	0e 94 d8 00 	call	0x1b0	; 0x1b0 <left_degrees>
+ 5f0:	8f ef       	ldi	r24, 0xFF	; 255
+ 5f2:	9f e7       	ldi	r25, 0x7F	; 127
+ 5f4:	ad e0       	ldi	r26, 0x0D	; 13
+ 5f6:	81 50       	subi	r24, 0x01	; 1
+ 5f8:	90 40       	sbci	r25, 0x00	; 0
+ 5fa:	a0 40       	sbci	r26, 0x00	; 0
+ 5fc:	e1 f7       	brne	.-8      	; 0x5f6 <run+0x88>
+ 5fe:	00 c0       	rjmp	.+0      	; 0x600 <run+0x92>
+ 600:	00 00       	nop
+			_delay_ms(300);
+
+			if(Center_white_line <= threshold ){  // Calibrating bot position after rotation
+ 602:	20 91 07 02 	lds	r18, 0x0207
+ 606:	30 e0       	ldi	r19, 0x00	; 0
+ 608:	80 91 02 02 	lds	r24, 0x0202
+ 60c:	90 91 03 02 	lds	r25, 0x0203
+ 610:	82 17       	cp	r24, r18
+ 612:	93 07       	cpc	r25, r19
+ 614:	0c f4       	brge	.+2      	; 0x618 <run+0xaa>
+ 616:	15 c1       	rjmp	.+554    	; 0x842 <run+0x2d4>
+				right_degrees();
+ 618:	0e 94 ab 02 	call	0x556	; 0x556 <right_degrees>
+ 61c:	12 c1       	rjmp	.+548    	; 0x842 <run+0x2d4>
+			}
+        }
+        else if((data_inst[index] == 'd'))
+ 61e:	84 36       	cpi	r24, 0x64	; 100
+ 620:	c9 f4       	brne	.+50     	; 0x654 <run+0xe6>
+        {
+            right_degrees();     // WHEN 'd' is the index element of array it would IMPLY BOT TO MAKE A RIGHT 60 DEGREE TURN
+ 622:	0e 94 ab 02 	call	0x556	; 0x556 <right_degrees>
+ 626:	8f ef       	ldi	r24, 0xFF	; 255
+ 628:	9f e7       	ldi	r25, 0x7F	; 127
+ 62a:	ad e0       	ldi	r26, 0x0D	; 13
+ 62c:	81 50       	subi	r24, 0x01	; 1
+ 62e:	90 40       	sbci	r25, 0x00	; 0
+ 630:	a0 40       	sbci	r26, 0x00	; 0
+ 632:	e1 f7       	brne	.-8      	; 0x62c <run+0xbe>
+ 634:	00 c0       	rjmp	.+0      	; 0x636 <run+0xc8>
+ 636:	00 00       	nop
+			_delay_ms(300);
+
+			if(Center_white_line <= threshold ){  // Calibrating bot position after rotation
+ 638:	20 91 07 02 	lds	r18, 0x0207
+ 63c:	30 e0       	ldi	r19, 0x00	; 0
+ 63e:	80 91 02 02 	lds	r24, 0x0202
+ 642:	90 91 03 02 	lds	r25, 0x0203
+ 646:	82 17       	cp	r24, r18
+ 648:	93 07       	cpc	r25, r19
+ 64a:	0c f4       	brge	.+2      	; 0x64e <run+0xe0>
+ 64c:	fa c0       	rjmp	.+500    	; 0x842 <run+0x2d4>
+			left_degrees();
+ 64e:	0e 94 d8 00 	call	0x1b0	; 0x1b0 <left_degrees>
+ 652:	f7 c0       	rjmp	.+494    	; 0x842 <run+0x2d4>
+		}
+        }
+        else if((data_inst[index] == 's')) // WHEN 's' is the index element of array it would IMPLY BOT TO MAKE A 180 DEGREE TURN (U-Turn)
+ 654:	83 37       	cpi	r24, 0x73	; 115
+ 656:	a1 f5       	brne	.+104    	; 0x6c0 <run+0x152>
+        {
+            left_degrees();  // 60 deg
+ 658:	f7 01       	movw	r30, r14
+ 65a:	19 95       	eicall
+			left();
+ 65c:	0e 94 d1 00 	call	0x1a2	; 0x1a2 <left>
+ 660:	8f ef       	ldi	r24, 0xFF	; 255
+ 662:	9f e7       	ldi	r25, 0x7F	; 127
+ 664:	af e1       	ldi	r26, 0x1F	; 31
+ 666:	81 50       	subi	r24, 0x01	; 1
+ 668:	90 40       	sbci	r25, 0x00	; 0
+ 66a:	a0 40       	sbci	r26, 0x00	; 0
+ 66c:	e1 f7       	brne	.-8      	; 0x666 <run+0xf8>
+ 66e:	00 c0       	rjmp	.+0      	; 0x670 <run+0x102>
+ 670:	00 00       	nop
+			_delay_ms(700);
+			left_degrees();   //60
+ 672:	f7 01       	movw	r30, r14
+ 674:	19 95       	eicall
+ 676:	8f ef       	ldi	r24, 0xFF	; 255
+ 678:	9f e7       	ldi	r25, 0x7F	; 127
+ 67a:	af e1       	ldi	r26, 0x1F	; 31
+ 67c:	81 50       	subi	r24, 0x01	; 1
+ 67e:	90 40       	sbci	r25, 0x00	; 0
+ 680:	a0 40       	sbci	r26, 0x00	; 0
+ 682:	e1 f7       	brne	.-8      	; 0x67c <run+0x10e>
+ 684:	00 c0       	rjmp	.+0      	; 0x686 <run+0x118>
+ 686:	00 00       	nop
+			_delay_ms(700);
+			
+			getSensorValue();
+ 688:	0e 94 79 01 	call	0x2f2	; 0x2f2 <getSensorValue>
+			
+			if(!(Left_white_line <= threshold && Center_white_line >= threshold && Right_white_line <= threshold))
+ 68c:	20 91 02 02 	lds	r18, 0x0202
+ 690:	30 91 03 02 	lds	r19, 0x0203
+ 694:	80 91 08 02 	lds	r24, 0x0208
+ 698:	90 e0       	ldi	r25, 0x00	; 0
+ 69a:	28 17       	cp	r18, r24
+ 69c:	39 07       	cpc	r19, r25
+ 69e:	6c f0       	brlt	.+26     	; 0x6ba <run+0x14c>
+ 6a0:	80 91 07 02 	lds	r24, 0x0207
+ 6a4:	90 e0       	ldi	r25, 0x00	; 0
+ 6a6:	82 17       	cp	r24, r18
+ 6a8:	93 07       	cpc	r25, r19
+ 6aa:	3c f0       	brlt	.+14     	; 0x6ba <run+0x14c>
+ 6ac:	80 91 06 02 	lds	r24, 0x0206
+ 6b0:	90 e0       	ldi	r25, 0x00	; 0
+ 6b2:	28 17       	cp	r18, r24
+ 6b4:	39 07       	cpc	r19, r25
+ 6b6:	0c f0       	brlt	.+2      	; 0x6ba <run+0x14c>
+ 6b8:	c4 c0       	rjmp	.+392    	; 0x842 <run+0x2d4>
+			{
+				right_degrees(); // to compensate extra turn 
+ 6ba:	0e 94 ab 02 	call	0x556	; 0x556 <right_degrees>
+ 6be:	c1 c0       	rjmp	.+386    	; 0x842 <run+0x2d4>
+			}				
+		}
+        else if((data_inst[index] == 'W')) // WHEN 'W' is the index element of array it would IMPLY BOT TO GO A BIT FORWARD
+ 6c0:	87 35       	cpi	r24, 0x57	; 87
+ 6c2:	39 f5       	brne	.+78     	; 0x712 <run+0x1a4>
+ 6c4:	8f ef       	ldi	r24, 0xFF	; 255
+ 6c6:	9f e7       	ldi	r25, 0x7F	; 127
+ 6c8:	a4 e0       	ldi	r26, 0x04	; 4
+ 6ca:	81 50       	subi	r24, 0x01	; 1
+ 6cc:	90 40       	sbci	r25, 0x00	; 0
+ 6ce:	a0 40       	sbci	r26, 0x00	; 0
+ 6d0:	e1 f7       	brne	.-8      	; 0x6ca <run+0x15c>
+ 6d2:	00 c0       	rjmp	.+0      	; 0x6d4 <run+0x166>
+ 6d4:	00 00       	nop
+        {
+            //forward_mm(40); //move a bit ahead to reach pick/drop point
+			_delay_ms(100);
+			velocity(253-140,253-130);
+ 6d6:	81 e7       	ldi	r24, 0x71	; 113
+ 6d8:	6b e7       	ldi	r22, 0x7B	; 123
+ 6da:	0e 94 cc 00 	call	0x198	; 0x198 <velocity>
+			PORTA=0x05;
+ 6de:	12 b9       	out	0x02, r17	; 2
+ 6e0:	8f ef       	ldi	r24, 0xFF	; 255
+ 6e2:	9f e3       	ldi	r25, 0x3F	; 63
+ 6e4:	a4 e1       	ldi	r26, 0x14	; 20
+ 6e6:	81 50       	subi	r24, 0x01	; 1
+ 6e8:	90 40       	sbci	r25, 0x00	; 0
+ 6ea:	a0 40       	sbci	r26, 0x00	; 0
+ 6ec:	e1 f7       	brne	.-8      	; 0x6e6 <run+0x178>
+ 6ee:	00 c0       	rjmp	.+0      	; 0x6f0 <run+0x182>
+ 6f0:	00 00       	nop
+			
+			_delay_ms(450);
+			velocity(0,0);
+ 6f2:	80 e0       	ldi	r24, 0x00	; 0
+ 6f4:	60 e0       	ldi	r22, 0x00	; 0
+ 6f6:	0e 94 cc 00 	call	0x198	; 0x198 <velocity>
+ 6fa:	8f ef       	ldi	r24, 0xFF	; 255
+ 6fc:	9f e7       	ldi	r25, 0x7F	; 127
+ 6fe:	a6 e1       	ldi	r26, 0x16	; 22
+ 700:	81 50       	subi	r24, 0x01	; 1
+ 702:	90 40       	sbci	r25, 0x00	; 0
+ 704:	a0 40       	sbci	r26, 0x00	; 0
+ 706:	e1 f7       	brne	.-8      	; 0x700 <run+0x192>
+ 708:	00 c0       	rjmp	.+0      	; 0x70a <run+0x19c>
+ 70a:	00 00       	nop
+			_delay_ms(500);
+			buzzer_off();
+ 70c:	0e 94 af 00 	call	0x15e	; 0x15e <buzzer_off>
+ 710:	98 c0       	rjmp	.+304    	; 0x842 <run+0x2d4>
+			
+        }
+        else if((data_inst[index] == 'A')) // WHEN 'A' is the index element of array it would IMPLY BOT TO MAKE A LEFT 120 DEGREE TURN
+ 712:	81 34       	cpi	r24, 0x41	; 65
+ 714:	b9 f4       	brne	.+46     	; 0x744 <run+0x1d6>
+        {
+			
+			
+			left_degrees(); // 60 deg
+ 716:	0e 94 d8 00 	call	0x1b0	; 0x1b0 <left_degrees>
+ 71a:	8f ef       	ldi	r24, 0xFF	; 255
+ 71c:	9f e3       	ldi	r25, 0x3F	; 63
+ 71e:	a2 e0       	ldi	r26, 0x02	; 2
+ 720:	81 50       	subi	r24, 0x01	; 1
+ 722:	90 40       	sbci	r25, 0x00	; 0
+ 724:	a0 40       	sbci	r26, 0x00	; 0
+ 726:	e1 f7       	brne	.-8      	; 0x720 <run+0x1b2>
+ 728:	00 c0       	rjmp	.+0      	; 0x72a <run+0x1bc>
+ 72a:	00 00       	nop
+			_delay_ms(50);
+			left_60_deg(); // hard rotate 60 degrees left
+ 72c:	0e 94 44 04 	call	0x888	; 0x888 <left_60_deg>
+ 730:	8f ef       	ldi	r24, 0xFF	; 255
+ 732:	9f e7       	ldi	r25, 0x7F	; 127
+ 734:	a6 e1       	ldi	r26, 0x16	; 22
+ 736:	81 50       	subi	r24, 0x01	; 1
+ 738:	90 40       	sbci	r25, 0x00	; 0
+ 73a:	a0 40       	sbci	r26, 0x00	; 0
+ 73c:	e1 f7       	brne	.-8      	; 0x736 <run+0x1c8>
+ 73e:	00 c0       	rjmp	.+0      	; 0x740 <run+0x1d2>
+ 740:	00 00       	nop
+ 742:	7f c0       	rjmp	.+254    	; 0x842 <run+0x2d4>
+			_delay_ms(500);
+			
+
+		}
+        else if((data_inst[index] == 'D')) // WHEN 'A' is the index element of array it would IMPLY BOT TO MAKE A Right 120 DEGREE TURN
+ 744:	84 34       	cpi	r24, 0x44	; 68
+ 746:	b9 f4       	brne	.+46     	; 0x776 <run+0x208>
+        {
+			
+			right_degrees(); // 60 deg
+ 748:	0e 94 ab 02 	call	0x556	; 0x556 <right_degrees>
+ 74c:	8f ef       	ldi	r24, 0xFF	; 255
+ 74e:	9f e3       	ldi	r25, 0x3F	; 63
+ 750:	a2 e0       	ldi	r26, 0x02	; 2
+ 752:	81 50       	subi	r24, 0x01	; 1
+ 754:	90 40       	sbci	r25, 0x00	; 0
+ 756:	a0 40       	sbci	r26, 0x00	; 0
+ 758:	e1 f7       	brne	.-8      	; 0x752 <run+0x1e4>
+ 75a:	00 c0       	rjmp	.+0      	; 0x75c <run+0x1ee>
+ 75c:	00 00       	nop
+			_delay_ms(50);
+			right_60_deg(); // hard rotate 60 degrees right
+ 75e:	0e 94 61 04 	call	0x8c2	; 0x8c2 <right_60_deg>
+ 762:	8f ef       	ldi	r24, 0xFF	; 255
+ 764:	9f e7       	ldi	r25, 0x7F	; 127
+ 766:	a6 e1       	ldi	r26, 0x16	; 22
+ 768:	81 50       	subi	r24, 0x01	; 1
+ 76a:	90 40       	sbci	r25, 0x00	; 0
+ 76c:	a0 40       	sbci	r26, 0x00	; 0
+ 76e:	e1 f7       	brne	.-8      	; 0x768 <run+0x1fa>
+ 770:	00 c0       	rjmp	.+0      	; 0x772 <run+0x204>
+ 772:	00 00       	nop
+ 774:	66 c0       	rjmp	.+204    	; 0x842 <run+0x2d4>
+			_delay_ms(500);
+		}
+        else if((data_inst[index] == 'S')) // WHEN 'A' is the index element of array it would IMPLY BOT TO move backward a bit
+ 776:	83 35       	cpi	r24, 0x53	; 83
+ 778:	21 f5       	brne	.+72     	; 0x7c2 <run+0x254>
+ 77a:	8f ef       	ldi	r24, 0xFF	; 255
+ 77c:	9f e7       	ldi	r25, 0x7F	; 127
+ 77e:	a4 e0       	ldi	r26, 0x04	; 4
+ 780:	81 50       	subi	r24, 0x01	; 1
+ 782:	90 40       	sbci	r25, 0x00	; 0
+ 784:	a0 40       	sbci	r26, 0x00	; 0
+ 786:	e1 f7       	brne	.-8      	; 0x780 <run+0x212>
+ 788:	00 c0       	rjmp	.+0      	; 0x78a <run+0x21c>
+ 78a:	00 00       	nop
+        {
+             // to go back to node from the pick/drop point
+				_delay_ms(100);
+				velocity(253-140,253-130);
+ 78c:	81 e7       	ldi	r24, 0x71	; 113
+ 78e:	6b e7       	ldi	r22, 0x7B	; 123
+ 790:	0e 94 cc 00 	call	0x198	; 0x198 <velocity>
+				PORTA=0x0A;
+ 794:	02 b9       	out	0x02, r16	; 2
+				ShaftCountRight=0;
+ 796:	10 92 0f 02 	sts	0x020F, r1
+ 79a:	10 92 10 02 	sts	0x0210, r1
+ 79e:	10 92 11 02 	sts	0x0211, r1
+ 7a2:	10 92 12 02 	sts	0x0212, r1
+ 7a6:	8f ef       	ldi	r24, 0xFF	; 255
+ 7a8:	9f e3       	ldi	r25, 0x3F	; 63
+ 7aa:	a4 e1       	ldi	r26, 0x14	; 20
+ 7ac:	81 50       	subi	r24, 0x01	; 1
+ 7ae:	90 40       	sbci	r25, 0x00	; 0
+ 7b0:	a0 40       	sbci	r26, 0x00	; 0
+ 7b2:	e1 f7       	brne	.-8      	; 0x7ac <run+0x23e>
+ 7b4:	00 c0       	rjmp	.+0      	; 0x7b6 <run+0x248>
+ 7b6:	00 00       	nop
+				
+				_delay_ms(450);
+				velocity(0,0);
+ 7b8:	80 e0       	ldi	r24, 0x00	; 0
+ 7ba:	60 e0       	ldi	r22, 0x00	; 0
+ 7bc:	0e 94 cc 00 	call	0x198	; 0x198 <velocity>
+ 7c0:	40 c0       	rjmp	.+128    	; 0x842 <run+0x2d4>
+        }
+        else if((data_inst[index] == 'P')) // WHEN 'P' is the index element of array it would IMPLY BOT TO PICK PEBBLE AND ALSO COMMUNICATE REMOTE XBEE FOR AR ANIMATION
+ 7c2:	80 35       	cpi	r24, 0x50	; 80
+ 7c4:	a9 f4       	brne	.+42     	; 0x7f0 <run+0x282>
+        {
+            magnet_on(); // make the port high for magnet
+ 7c6:	0e 94 b0 02 	call	0x560	; 0x560 <magnet_on>
+ 7ca:	8f ef       	ldi	r24, 0xFF	; 255
+ 7cc:	9f ef       	ldi	r25, 0xFF	; 255
+ 7ce:	ac e2       	ldi	r26, 0x2C	; 44
+ 7d0:	81 50       	subi	r24, 0x01	; 1
+ 7d2:	90 40       	sbci	r25, 0x00	; 0
+ 7d4:	a0 40       	sbci	r26, 0x00	; 0
+ 7d6:	e1 f7       	brne	.-8      	; 0x7d0 <run+0x262>
+ 7d8:	00 c0       	rjmp	.+0      	; 0x7da <run+0x26c>
+ 7da:	00 00       	nop
+			
+			_delay_ms(1000); // give some time for charging 
+			
+			
+			
+			uart_tx('J');    // will inform the pc to change AR of pebble
+ 7dc:	8a e4       	ldi	r24, 0x4A	; 74
+ 7de:	0e 94 8c 02 	call	0x518	; 0x518 <uart_tx>
+		    recData = uart_rx();
+ 7e2:	0e 94 84 02 	call	0x508	; 0x508 <uart_rx>
+ 7e6:	80 93 04 02 	sts	0x0204, r24
+			uart_tx(recData);
+ 7ea:	0e 94 8c 02 	call	0x518	; 0x518 <uart_tx>
+ 7ee:	29 c0       	rjmp	.+82     	; 0x842 <run+0x2d4>
+			
+			
+			
+             // the pebble is diminished
+        }
+        else if((data_inst[index] == 'T')) // WHEN 'P' is the index element of array it would IMPLY BOT TO DROP PEBBLE AND ALSO COMMUNICATE REMOTE XBEE FOR AR ANIMATION
+ 7f0:	84 35       	cpi	r24, 0x54	; 84
+ 7f2:	a9 f4       	brne	.+42     	; 0x81e <run+0x2b0>
+        {
+			
+
+			uart_tx('K'); //communicate pc to change water level (AR)
+ 7f4:	8b e4       	ldi	r24, 0x4B	; 75
+ 7f6:	0e 94 8c 02 	call	0x518	; 0x518 <uart_tx>
+			
+			recData = uart_rx();
+ 7fa:	0e 94 84 02 	call	0x508	; 0x508 <uart_rx>
+ 7fe:	80 93 04 02 	sts	0x0204, r24
+			uart_tx(recData);
+ 802:	0e 94 8c 02 	call	0x518	; 0x518 <uart_tx>
+				// the communication was established
+				// do nothing
+			}
+			
+			
+            magnet_off();
+ 806:	0e 94 b4 02 	call	0x568	; 0x568 <magnet_off>
+ 80a:	8f ef       	ldi	r24, 0xFF	; 255
+ 80c:	9f ef       	ldi	r25, 0xFF	; 255
+ 80e:	a9 e5       	ldi	r26, 0x59	; 89
+ 810:	81 50       	subi	r24, 0x01	; 1
+ 812:	90 40       	sbci	r25, 0x00	; 0
+ 814:	a0 40       	sbci	r26, 0x00	; 0
+ 816:	e1 f7       	brne	.-8      	; 0x810 <run+0x2a2>
+ 818:	00 c0       	rjmp	.+0      	; 0x81a <run+0x2ac>
+ 81a:	00 00       	nop
+ 81c:	12 c0       	rjmp	.+36     	; 0x842 <run+0x2d4>
+			_delay_ms(2000);
+
+        }
+        else if((data_inst[index] == 'z')) // WHEN 'P' is the index element of array it would IMPLY BOT TO TURN ON BUZZER
+ 81e:	8a 37       	cpi	r24, 0x7A	; 122
+ 820:	61 f4       	brne	.+24     	; 0x83a <run+0x2cc>
+        {
+            buzzer_on();          //will be used in finals to add depict completion of whole arena traversal.
+ 822:	0e 94 ac 00 	call	0x158	; 0x158 <buzzer_on>
+ 826:	8f ef       	ldi	r24, 0xFF	; 255
+ 828:	9f ef       	ldi	r25, 0xFF	; 255
+ 82a:	a0 ee       	ldi	r26, 0xE0	; 224
+ 82c:	81 50       	subi	r24, 0x01	; 1
+ 82e:	90 40       	sbci	r25, 0x00	; 0
+ 830:	a0 40       	sbci	r26, 0x00	; 0
+ 832:	e1 f7       	brne	.-8      	; 0x82c <run+0x2be>
+ 834:	00 c0       	rjmp	.+0      	; 0x836 <run+0x2c8>
+ 836:	00 00       	nop
+ 838:	04 c0       	rjmp	.+8      	; 0x842 <run+0x2d4>
+			_delay_ms(5000);
+        }
+        else if((data_inst[index] == 'Z')) // WHEN 'P' is the index element of array it would IMPLY BOT TO TURN OFF BUZZER
+ 83a:	8a 35       	cpi	r24, 0x5A	; 90
+ 83c:	11 f4       	brne	.+4      	; 0x842 <run+0x2d4>
+        {
+            buzzer_off(); // end of whole traversal
+ 83e:	0e 94 af 00 	call	0x15e	; 0x15e <buzzer_off>
+        }
+
+        index = index + 1;  // will point to next instruction in array
+ 842:	80 91 09 02 	lds	r24, 0x0209
+ 846:	90 91 0a 02 	lds	r25, 0x020A
+ 84a:	01 96       	adiw	r24, 0x01	; 1
+ 84c:	90 93 0a 02 	sts	0x020A, r25
+ 850:	80 93 09 02 	sts	0x0209, r24
+	forward();
+    index = 0;
+    // ShaftCountLeft or ShaftCountRight increments every time wheels rotates. so it is necessary to clear this variable so that count for degree_turn is properly obtained
+    ShaftCountLeft=0;
+    ShaftCountRight=0;
+    while (!(data_inst[index] == '.'))     // WHEN '.' is the index element of array it would IMPLY TRAVERSAL IS COMPLETED, now break the loop and stop
+ 854:	8c 0f       	add	r24, r28
+ 856:	9d 1f       	adc	r25, r29
+ 858:	dc 01       	movw	r26, r24
+ 85a:	8c 91       	ld	r24, X
+ 85c:	8e 32       	cpi	r24, 0x2E	; 46
+ 85e:	09 f0       	breq	.+2      	; 0x862 <run+0x2f4>
+ 860:	be ce       	rjmp	.-644    	; 0x5de <run+0x70>
+            buzzer_off(); // end of whole traversal
+        }
+
+        index = index + 1;  // will point to next instruction in array
+    }
+		stop();  // stop the bot
+ 862:	0e 94 89 01 	call	0x312	; 0x312 <stop>
+}
+ 866:	df 91       	pop	r29
+ 868:	cf 91       	pop	r28
+ 86a:	1f 91       	pop	r17
+ 86c:	0f 91       	pop	r16
+ 86e:	ff 90       	pop	r15
+ 870:	ef 90       	pop	r14
+ 872:	08 95       	ret
+
+00000874 <check>:
+ 874:	8f ef       	ldi	r24, 0xFF	; 255
+ 876:	9f e7       	ldi	r25, 0x7F	; 127
+ 878:	a6 e1       	ldi	r26, 0x16	; 22
+ 87a:	81 50       	subi	r24, 0x01	; 1
+ 87c:	90 40       	sbci	r25, 0x00	; 0
+ 87e:	a0 40       	sbci	r26, 0x00	; 0
+ 880:	e1 f7       	brne	.-8      	; 0x87a <check+0x6>
+ 882:	00 c0       	rjmp	.+0      	; 0x884 <check+0x10>
+ 884:	00 00       	nop
+*/
+
+void check(){
+	
+	_delay_ms(500); // be in last position for 0.5 seconds (mostly used for rotation)
+}
+ 886:	08 95       	ret
+
+00000888 <left_60_deg>:
+* Example Call: left_60_deg();
+*/
+
+
+void left_60_deg(){
+	ShaftCountRight=0; // reset shaft count
+ 888:	10 92 0f 02 	sts	0x020F, r1
+ 88c:	10 92 10 02 	sts	0x0210, r1
+ 890:	10 92 11 02 	sts	0x0211, r1
+ 894:	10 92 12 02 	sts	0x0212, r1
+	velocity(120,130);
+ 898:	88 e7       	ldi	r24, 0x78	; 120
+ 89a:	62 e8       	ldi	r22, 0x82	; 130
+ 89c:	0e 94 cc 00 	call	0x198	; 0x198 <velocity>
+	PORTA = 0x09;   // left turn
+ 8a0:	89 e0       	ldi	r24, 0x09	; 9
+ 8a2:	82 b9       	out	0x02, r24	; 2
+	check();        // check for 60 degree rotation
+ 8a4:	0e 94 3a 04 	call	0x874	; 0x874 <check>
+	velocity(0,0);  // stop
+ 8a8:	80 e0       	ldi	r24, 0x00	; 0
+ 8aa:	60 e0       	ldi	r22, 0x00	; 0
+ 8ac:	0e 94 cc 00 	call	0x198	; 0x198 <velocity>
+	ShaftCountRight=0; // reset shaft count for safer side
+ 8b0:	10 92 0f 02 	sts	0x020F, r1
+ 8b4:	10 92 10 02 	sts	0x0210, r1
+ 8b8:	10 92 11 02 	sts	0x0211, r1
+ 8bc:	10 92 12 02 	sts	0x0212, r1
+	
+}
+ 8c0:	08 95       	ret
+
+000008c2 <right_60_deg>:
+* Example Call: right_60_deg();
+*/
+
+
+void right_60_deg(){
+	ShaftCountRight=0; // reset shaft count
+ 8c2:	10 92 0f 02 	sts	0x020F, r1
+ 8c6:	10 92 10 02 	sts	0x0210, r1
+ 8ca:	10 92 11 02 	sts	0x0211, r1
+ 8ce:	10 92 12 02 	sts	0x0212, r1
+	velocity(120,130);
+ 8d2:	88 e7       	ldi	r24, 0x78	; 120
+ 8d4:	62 e8       	ldi	r22, 0x82	; 130
+ 8d6:	0e 94 cc 00 	call	0x198	; 0x198 <velocity>
+	PORTA = 0x06;    // right turn
+ 8da:	86 e0       	ldi	r24, 0x06	; 6
+ 8dc:	82 b9       	out	0x02, r24	; 2
+	check();         // check for 60 degree rotation
+ 8de:	0e 94 3a 04 	call	0x874	; 0x874 <check>
+	velocity(0,0);   // stop
+ 8e2:	80 e0       	ldi	r24, 0x00	; 0
+ 8e4:	60 e0       	ldi	r22, 0x00	; 0
+ 8e6:	0e 94 cc 00 	call	0x198	; 0x198 <velocity>
+	ShaftCountRight=0; // reset shaft count for safer side
+ 8ea:	10 92 0f 02 	sts	0x020F, r1
+ 8ee:	10 92 10 02 	sts	0x0210, r1
+ 8f2:	10 92 11 02 	sts	0x0211, r1
+ 8f6:	10 92 12 02 	sts	0x0212, r1
+
+}
+ 8fa:	08 95       	ret
+
+000008fc <main>:
+
+
+//MAIN FUNCTION
+
+int main(void)
+{
+ 8fc:	cf 93       	push	r28
+ 8fe:	df 93       	push	r29
+
+	init_devices();  // initialing devices
+ 900:	0e 94 73 02 	call	0x4e6	; 0x4e6 <init_devices>
+
+	
+
+	while(1){
+        recData = uart_rx();              // storing received data ( all the traversal instructions in form of mnemonics
+		data_inst[index]=recData;         //appending  the  instructions
+ 904:	cb e1       	ldi	r28, 0x1B	; 27
+ 906:	d2 e0       	ldi	r29, 0x02	; 2
+	init_devices();  // initialing devices
+
+	
+
+	while(1){
+        recData = uart_rx();              // storing received data ( all the traversal instructions in form of mnemonics
+ 908:	0e 94 84 02 	call	0x508	; 0x508 <uart_rx>
+ 90c:	80 93 04 02 	sts	0x0204, r24
+		data_inst[index]=recData;         //appending  the  instructions
+ 910:	e0 91 09 02 	lds	r30, 0x0209
+ 914:	f0 91 0a 02 	lds	r31, 0x020A
+ 918:	ec 0f       	add	r30, r28
+ 91a:	fd 1f       	adc	r31, r29
+ 91c:	80 83       	st	Z, r24
+		uart_tx(recData);                 // transmitting back to cross check and confirm that all instructions are received
+ 91e:	0e 94 8c 02 	call	0x518	; 0x518 <uart_tx>
+		if(recData=='.')
+ 922:	80 91 04 02 	lds	r24, 0x0204
+ 926:	8e 32       	cpi	r24, 0x2E	; 46
+ 928:	51 f0       	breq	.+20     	; 0x93e <main+0x42>
+        {
+            break;
+		}
+		else
+        {
+            index+=1;
+ 92a:	80 91 09 02 	lds	r24, 0x0209
+ 92e:	90 91 0a 02 	lds	r25, 0x020A
+ 932:	01 96       	adiw	r24, 0x01	; 1
+ 934:	90 93 0a 02 	sts	0x020A, r25
+ 938:	80 93 09 02 	sts	0x0209, r24
+		}
+    }
+ 93c:	e5 cf       	rjmp	.-54     	; 0x908 <main+0xc>
+ 93e:	8f ef       	ldi	r24, 0xFF	; 255
+ 940:	9f ef       	ldi	r25, 0xFF	; 255
+ 942:	a8 e0       	ldi	r26, 0x08	; 8
+ 944:	81 50       	subi	r24, 0x01	; 1
+ 946:	90 40       	sbci	r25, 0x00	; 0
+ 948:	a0 40       	sbci	r26, 0x00	; 0
+ 94a:	e1 f7       	brne	.-8      	; 0x944 <main+0x48>
+ 94c:	00 c0       	rjmp	.+0      	; 0x94e <main+0x52>
+ 94e:	00 00       	nop
+  
+	
+
+_delay_ms(200); // just some delay
+run();          // start the traversal
+ 950:	0e 94 b7 02 	call	0x56e	; 0x56e <run>
+
+    
+
+
+
+}
+ 954:	80 e0       	ldi	r24, 0x00	; 0
+ 956:	90 e0       	ldi	r25, 0x00	; 0
+ 958:	df 91       	pop	r29
+ 95a:	cf 91       	pop	r28
+ 95c:	08 95       	ret
+
+0000095e <_exit>:
+ 95e:	f8 94       	cli
+
+00000960 <__stop_program>:
+ 960:	ff cf       	rjmp	.-2      	; 0x960 <__stop_program>

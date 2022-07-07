@@ -1,0 +1,19 @@
+
+
+'w' : move straight
+'a' : anticlockwise 60 deg angular turn
+'d' : clockwise 60 deg angular angular turn
+'s' : rotate 180 deg
+
+'W' : move a bit ahead
+'A' : anticlockwise 120 deg angular turn
+'D' : clockwise 120 deg angular turn
+'S' : move a bit back to current_bot_direction
+
+'P' : energise the magnet
+'T' : de-energise  the magnet
+'z' : buzzer on
+'Z' : buzzer off
+
+'J' : change pebble AR
+'K' : change water AR
